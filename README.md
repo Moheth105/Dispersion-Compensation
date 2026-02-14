@@ -5,8 +5,24 @@
 Design and simulate a fiber optic system using dispersion-compensating fiber to reduce chromatic dispersion.
 
 ## Theory
-<img width="1398" height="500" alt="image" src="https://github.com/user-attachments/assets/a922bb4a-e871-4643-96a5-b78350cfb8d1" />
+Dispersion-compensating fiber (DCF) provides an optical medium with a relatively large negative chromatic dispersion factor \(D(\lambda)\) at the operating wavelength.  
 
+If a transmission fiber of length \(L_{TF}\) is connected in series with a DCF of length \(L_{DCF}\), then the total chromatic dispersion is given by:
+
+\[
+\Delta D_t(\lambda) = D_{TF}(\lambda) \cdot L_{TF} + D_{DCF}(\lambda) \cdot L_{DCF} \cdot \Delta \lambda
+\]
+
+where:
+- \(D_{TF}(\lambda)\) = chromatic dispersion factor for the transmission fiber  
+- \(D_{DCF}(\lambda)\) = chromatic dispersion factor for the DCF  
+- \(\Delta \lambda\) = transmitter spectral width  
+
+Similarly, the total attenuation loss of the two-fiber combination is:
+
+\[
+Loss = A_{TF} \cdot L_{TF} + A_{DCF} \cdot L_{DCF}
+\]
 
 Therefore, given target values for chromatic dispersion and attenuation loss plus specifications of the transmitter, fiber, and receiver, one can determine the lengths of the transmission fiber and the DCF by solving the above two equations simultaneously.
 
@@ -74,5 +90,11 @@ The main physical components of this layout are:
 
 ---
 
+## Tabulation
+
+![WhatsApp Image 2026-02-14 at 1 32 34 PM](https://github.com/user-attachments/assets/78de9f95-5050-438c-95e1-512248d8e4a5)
+
 ## Conclusions
+
+
 Discuss the effectiveness of dispersion-compensating fiber and the ability of the calculations to engineer a viable system.
